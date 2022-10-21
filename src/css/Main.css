@@ -1,0 +1,57 @@
+html {
+  background-color: rgb(95, 95, 95);
+}
+
+.row-1, .row-2 {
+  align-items: center;
+  padding-left: 135px;
+  position: relative;
+  display: inline-flex;
+}
+.row-1 .Apps, .row-2 .Apps {
+  width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  margin-left: 60px;
+  font-size: 30px;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 20px 20px 20px 20px;
+  background-color: rgba(255, 255, 255, 0.455);
+  border-radius: 40px;
+}
+.row-1 .Apps p, .row-2 .Apps p {
+  margin: 10px 10px 10px 10px;
+  color: white;
+  padding-top: 5px;
+  pointer-events: none;
+}
+.row-1 .Apps a, .row-2 .Apps a {
+  display: flex;
+  text-decoration: none;
+}
+.row-1 .Apps img, .row-2 .Apps img {
+  width: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 5px 0 5px 5px;
+  border-radius: 20px;
+}
+.row-1 .Apps li, .row-2 .Apps li {
+  list-style-type: none;
+  border: 10px;
+  border-left-style: solid;
+  border-color: rgb(0, 128, 255);
+  margin-bottom: 10px;
+  background-color: rgba(0, 255, 255, 0.46);
+  width: 300px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.row-1 .Apps li :hover, .row-2 .Apps li :hover {
+  background-color: rgba(0, 0, 0, 0.247);
+  cursor: pointer;
+}/*# sourceMappingURL=Main.css.map */

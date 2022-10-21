@@ -1,0 +1,57 @@
+let name: string = "name"; // define specific type
+let age: number = 5;
+let isStudent: boolean = true;
+let hobbies: string[];
+let role: [number,string] // contains 1 number, 1 string
+
+let union: string | number; // can contain either number or string
+
+let anyType: any; // can contain anything (not recommended)
+
+let unknownType: unknown; // could be used if not known what type it'll get
+
+type Person = {
+    name: string;
+    age?: number; // questionmark makes it optional
+}
+
+interface InterPerson {
+    name: string;
+    age?: number;
+}
+
+interface InterFemale extends InterPerson { // extends interface, also works with type
+    hobby: string;
+}
+
+type X = {
+    a: string;
+    b: boolean;
+}
+
+type Y = X & { // includes all properties of X and Y (so a, b, c, d), also works with interfaces
+    c: number;
+    d: boolean;
+}
+
+let y:Y = { // define type Y which was all X properties
+    c: 12,
+    a: "texst",
+    d: true,
+    b: false
+}
+
+let person: Person = {
+    name: "Sietse",
+    age: 21
+};
+
+let lotsOfPeople: Person[];
+
+function printName(name: string) {
+    console.log(name);
+}
+
+let printInfo: (name: string, age: number) => never; // never doesn't return anything, whereas void returns undefined
+
+shortcut rafce
